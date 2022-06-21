@@ -1,0 +1,43 @@
+* {
+    box-sizing:border-box;
+    font-family:Verdana,Tahoma,sans-serif;
+    margin:0;
+    padding:0;
+    color: #ffe9b1;
+    font-size: 16px;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #1f2833;
+}
+
+h1, h2 {
+    text-align: center;
+    padding-top: 1em;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+footer {
+    color: rgba(255, 233, 177,.4);
+    text-align: center;
+}
+
+figure:hover {
+    background-color: #334252;
+}
