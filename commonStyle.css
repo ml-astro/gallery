@@ -17,7 +17,9 @@ ul {
 }
 
 body {
-    background-color: #1f2833;
+    background: url("./background3.jpg") fixed;
+    backdrop-filter: blur(100px);
+    /*background-color: #1f2833;*/
 }
 
 h1, h2 {
