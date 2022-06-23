@@ -57,7 +57,7 @@ figcaption {
         margin: 0 auto;
     }
 
-    a {
+    .gallery a {
         margin: 1em;
         width: 50%;
     }
@@ -77,20 +77,20 @@ figcaption {
         width: 100%;
     }
 
-    figure {
+   .gallery  figure {
         display: block;
     }
 
-    a {
+    .gallery a {
         width: 50%;
         margin: 0 auto;
     }
 
-    img {
+    .gallery img {
         padding: 1em;
     }
 
-    figcaption {
+    .gallery figcaption {
         width: 100%;
         text-align: justify;
     }
