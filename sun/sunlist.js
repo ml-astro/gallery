@@ -56,4 +56,20 @@ const sunlist = [
         info: 'Группа пятен AR2339 в одном масштабе с Землёй (синий кружок)',
         instruments: 'Sky Watcher 150/750 Explorer BD, Canon 1100D',
     },
+    {
+        id: 'sun08',
+        title: 'Пятна AR3014 и AR3017',
+        filename: 'ar3014',
+        date: '23 мая 2022 г.',
+        info: 'Две большие группы пятен перед заходом за правую сторону солнечного диска.',
+        instruments: 'Sky Watcher 150/750 Explorer BD, ASI 183MC',
+    },
+    {
+        id: 'sun09',
+        title: 'Пятно AR3014',
+        filename: 'ar3014_2x_scale',
+        date: '23 мая 2022 г.',
+        info: 'Две большие группы пятен в сравнении с размером Земли.',
+        instruments: 'Sky Watcher 150/750 Explorer BD, ASI 183MC, линза барлоу 2х',
+    },
 ]
