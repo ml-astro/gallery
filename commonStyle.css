@@ -43,3 +43,13 @@ footer {
 figure:hover {
     background-color: #334252;
 }
+
+@media (max-width: 760px) {
+    .gridcontainer figcaption {
+        padding: .3em;
+}
+
+.gridcontainer a {
+        margin: .3em;
+    }
+}

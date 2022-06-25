@@ -8,7 +8,11 @@
 
 img {
     width: 100%;
-    padding: 1em;
+    padding: .5em;
+}
+
+p {
+    padding-top: 1em;
 }
 
 figure {

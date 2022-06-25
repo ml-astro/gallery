@@ -9,147 +9,126 @@
     <link rel="stylesheet" href="./style.css">
     <style>
         main {
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
         }
-
-        a, .welcome {
-            color:cyan;
-            text-align: center;
-        }
         p {
-           /*text-align: justify;*/
+            text-align: justify;
             font-size: 120%;
             margin-top: 1em;
         }
 
-        .bio {
+        .early, .middle, .later {
             display: flex;
             margin: 0 auto;
-            flex-wrap: wrap;
             max-width: 1100px;
-            min-width: 800px;
+            min-width: 1000px;
+            justify-content: space-between;
+        }
+
+        .later{
+            max-width: 900px;
+            min-width: 0;
             justify-content: space-around;
-            align-items: center;
+            width: 60%;
+            margin: 0 auto;
         }
 
-        .bio section {
-            flex-basis: 45%;
-            margin-bottom: 3em;
-        }
-
-        .observing {
-            width: 290px;
-        }
-
-        .radio {
-            width: 180px;
+        .later img {
+            width: 30%;
             position: relative;
-            left:50%;
+            left: 50%;
+        }
+        .later section {
+            width: 50%;
+        }
+
+        .early section {
+            width: 50%;
+            margin: 1em;
+        }
+
+        .middle {
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .middle section {
+            width: 35%;
+            margin: 1em;
+        }
+
+        .early img {
+            margin-right: 2em;
         }
 
         img {
             border-radius: 50%;
-            margin: 1em;
         }
 
-        .ending {
-            width: 60%;
-            margin: 0 auto;
-            min-width: 700px;
-        }
 
         @media (max-width: 1000px) {
-            main {
-                width: 90%;
-            }
-
-            .bio {
+            .early {
                 margin: 0 auto;
                 display: inline-block;
                 max-width: none;
                 min-width: 0;
+                width: 95%;
+            }
+
+            .middle {
+                max-width: none;
+                min-width: 0;
+                width: 95%;
+            }
+
+            .middle section {
+            width: 50%;
+            margin: 1em;
+        }
+
+            .early section {
                 width: 100%;
             }
-            
-            section:nth-child(3), section:nth-child(5) {
-                width: 50%;
-                display: inline-block;
-            }
 
-            section:nth-child(4), section:nth-child(6) {
-                float: right;
-                width: 50%;
-            }
-
-            .radio {
-                position: static;
-            }
-
-
-            p {
-                text-align: justify;
-            }
-            .ending {
-                width: 90%;
-                min-width: 0;
-            }
-
-            .sitting {
-                width: 50%;
+            .early img {
                 float: left;
-                margin-top: 2em;
+                width: 50%;
             }
 
         }
         @media (max-width: 660px) {
-            main {
-                width: 100%;
-            }
-            .bio section {
-                margin-bottom: 0px;
-            }
-
-            section {
-                margin: 0 auto;
-                padding: .8em;
-                min-width: 0;
-                width: 100%;
-                display: block;
-            }
-
-            .sitting, .observing, .radio, .ending {
-                width: 100%;
-                float: none;
-                margin: 0 auto;
-            }
-
-            section:nth-child(3), section:nth-child(5) {
-                width: 100%;
-                display: block;
-            }
-
-            section:nth-child(4), section:nth-child(6) {
-                float: none;
-                width: 100%;
-            }
-
-            section:nth-child(4), section:nth-child(5) {
-                float: none;
-                width: 49%;
+            .middle {
                 display: inline-block;
             }
 
-            .observing, .radio {
+            .middle section {
                 width: 100%;
             }
-
+            .middle img {
+                width: 40%;
+            }
+        }
+        @media (max-width: 500px) {
+            .early {
+                width: 100%;
+            }
+            .early section {
+                margin: 0;
+                padding: .8em;
+            }
+            .early img {
+                float: none;
+                margin: 0;
+                width: 100%;
+            }
             p {
                 font-size: 100%;
             }
-            .bio {
+            .early .bio, .middle .bio {
                 margin: 0;
             }
+            
         }
     </style>
 </head>
@@ -158,31 +137,35 @@
     <h1>Приветствую вас!</h1>
     <h2>Меня зовут Максим.<br>Я - любитель астрономии из Эстонии.</h2>
     <main>
-        <div class="bio">
+        <div class="early">
             <section>
-                <img src="./me.jpg" alt="" class="sitting">
+                <img src="./me.jpg" alt="">
             </section>
-            <section>
+            <section class="bio">
                 <p>Я один из тех людей, кого с самого детства интересовал бескрайний космос. Первый серьёзный поворотный момент случился в 1996 году во время появления на небе кометы C/1996 B2 (Хякутакэ). С тех пор я начал пристально вглядываться в небо со своим старым шестикратным биноклем в поисках планет и редких явлений. Спустя пару-тройку лет я прикоснулся к первому телескопу ТАЛ-1 и открыл для себя массу новых ранее недоступных объектов, таких как звездные скопления, туманности и галактики. Мое увлечение переросло в нечто более серьёзное.</p>
                 <p>Шквал познавательного материала в виде виртуальных планетариев, научных статей, книг, лекций и онлайн-курсов, обрушился на меня в начале 2000-ых, что ещё больше втянуло меня в любимую деятельность. С тех пор я начал углубляться в матчасть и продолжаю свои наблюдения.</p>
             </section>
-            <section>
-                <p>Всё своё детство я мечтал о настоящем телескопе и в 2014 году я стал владельцем простейшего инструмента: трубы с диаметром 150 мм на экваториальной монтировке и единственным приводом на оси восхождения. Вместе с ним доступные любому принадлежности: две линзы барлоу, несколько окуляров, зеркалка Canon 1100D и пара астрокамер, позволили мне наблюдать и фотографировать далекие космические объекты с большим диапазоном увеличений.</p>
-            </section>
-            <section><img src="./observing.jpg" alt="" class="observing"></section>
-            <section>
-                <img src="./radio.jpg" alt="" class="radio">
-            </section>
-            <section>
-                <p>Помимо астрофото, немного увлекаюсь радиолюбительством. В частности, прослушиванием переговоров на МКС и приёмом данных с метеоспутников. Мои работы можно посмотреть в соответствующем разделе.</p>
-            </section>
         </div>
-    <section class="ending">
+<div class="middle">
+    <section class="bio">
+        <p >Всё своё детство я мечтал о настоящем телескопе и в 2014 году я стал владельцем простейшего инструмента: трубы с диаметром 150 мм на экваториальной монтировке и единственным приводом на оси восхождения. Вместе с ним доступные любому принадлежности: две линзы барлоу, несколько окуляров, зеркалка Canon 1100D и пара астрокамер, позволили мне наблюдать и фотографировать далекие космические объекты с большим диапазоном увеличений.</p>
+    </section>
+    <section><img src="./observing.jpg" alt="""></section>
+</div>
+    <div class="later">
+    <section>
+        <img src="./radio.jpg" alt="">
+    </section>
+    <section>
+        <p>Помимо астрофото, немного увлекаюсь радиолюбительством. В частности, прослушиванием переговоров на МКС и приёмом данных с метеоспутников. Мои работы можно посмотреть в соответствующем разделе.</p>
+    </section>
+</div>
+    <section>
         <p>Некоторое время назад занимался популяризацией в соцсетях и проводил вечера тротуарной астрономии для местных жителей, планирую к этому ещё вернуться.</p>
         <p>На сайте представлены мои работы, сделанные в разные годы и с разными инструментами. В них я показываю космос таким, каким его видят мои скромные недорогие инструменты. Делюсь своими мыслями, интересными статьями и некоторыми разработками.</p>
         <p>Сайт со временем будет обновляться.</p>
         <p>Буду рад получить ваши отзывы и предложения по адресу <a href="mailto:maksim.ljovin@outlook.com">maksim.ljovin@outlook.com</a></p>
-        <a href="./index.html"><p class="welcome">Добро пожаловать!</p></a>
+        <p>Добро пожаловать!</p>
     </section>
 </main>
     <footer><script>footer();</script></footer>
