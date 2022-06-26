@@ -4,7 +4,7 @@ function renderImageGallery (imageArray) {
         let li = document.createElement('li');
         li.innerHTML = `<h2 id=${element.id}>${element.title}</h2>
         <figure>
-            <a href = '${element.filename}.jpg'>
+        <a href = "${element.link?element.link+'" target = "_blank"':element.filename+".jpg"}">
                 <img src = '${element.filename}_min.jpg'>
             </a>
             <figcaption>
