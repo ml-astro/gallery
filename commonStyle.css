@@ -22,7 +22,7 @@ body {
     /*background-color: #1f2833;*/
 }
 
-h1, h2 {
+h1, h2, h3 {
     text-align: center;
     padding-top: 1em;
 }
@@ -32,6 +32,10 @@ h1 {
 }
 
 h2 {
+    font-size: 1.5em;
+}
+
+h3 {
     font-size: 1.3em;
 }
 
